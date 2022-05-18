@@ -61,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       if (dropdownValue == null)
                         Get.snackbar("Error", "Please choose any type");
                       else
-                        Get.to(() => QuizScreen(dropdownValue: dropdownValue!));
+                        Get.off(() => QuizScreen(dropdownValue: dropdownValue!));
                     },
                     child: Text(
                       "PLAY",

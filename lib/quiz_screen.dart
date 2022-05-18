@@ -56,9 +56,11 @@ class QuizScreen extends StatelessWidget {
                                         _controller.onChoose(element);
 
                                         if (_controller.currentIndex == 14)
-                                          Get.off(() => ResultScreen(
-                                              result: _controller.result,
-                                              length: _controller.quizHelper.results.length));
+                                          Get.off(
+                                            () => ResultScreen(
+                                                result: _controller.result,
+                                                length: _controller.quizHelper.results.length),
+                                          );
                                       },
                                       child: Padding(
                                         padding: const EdgeInsets.symmetric(horizontal: 10),
