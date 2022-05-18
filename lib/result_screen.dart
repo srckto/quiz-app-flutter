@@ -36,7 +36,7 @@ class ResultScreen extends StatelessWidget {
                       padding: EdgeInsets.symmetric(vertical: 10),
                       primary: Color(0xFFFFBA00),
                     ),
-                    onPressed: () => Get.to(() => HomeScreen()),
+                    onPressed: () => Get.off(() => HomeScreen()),
                     child: Text(
                       "RESTART",
                       style: TextStyle(
